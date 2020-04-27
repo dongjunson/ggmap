@@ -1,0 +1,29 @@
+
+<select (change)="changeSIGUN($event.target.value)">
+	<option *ngFor="let t of types" value={{t.value}} [selected]="t.key == '성남시'">
+		{{t.key}}
+	</option>
+</select>
+
+<kakao-maps [mapConfig]="mapConfig"></kakao-maps>	
+
+<ng-template let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">경기지역화폐 가맹정 정보</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+		
+	</div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+  </div>
+</ng-template>
+
+<div class="copyright">
+	<b>copyrights by ogoon@kakao.com</b>
+	<a href="https://data.gg.go.kr/portal/intro/develop/searchBulletinPage.do" target="_blank">@경기 Open API</a>
+	<a href="https://brunch.co.kr/@ogoon" target="_blank">brunch@ogoon</a>
+</div>

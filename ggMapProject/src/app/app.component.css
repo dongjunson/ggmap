@@ -1,0 +1,7 @@
+app-root,body,kakao-maps{width:100%;height:100%}
+.map-container{width:100%;height:100%}
+select{position:absolute;z-index:1000;margin:1em;font-size:13px;padding:3px}
+.copyright {text-align:center;position:absolute;z-index:1000;right:0;bottom:0;padding:10px 20px;background-color:#fff7be7a;border-radius:16px;margin:0 10px 10px 0}
+.copyright b {display: block;}
+.copyright a {display: inline-block;text-decoration: underline;margin:0 10px}
+.copyright a:hover {color:Red;}
